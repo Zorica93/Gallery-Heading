@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Gallery Heading</title>
+	<style>
+		body {
+			
+			font-family: sans-serif;
+			font-size: 14px;
+			
+		}
+		
+		#container {
+			max-width: 960px;
+			width: 90%;
+			margin: 0 auto;
+		}
+		
+		header, main, article {
+			padding: 10px;
+		}
+		
+		main#gridbox {
+			display: grid;
+			
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+			grid-gap: 52px;
+			
+		
+		}
+		.box {
+			width: 140px;
+			height: 140px;
+			background-color: rgba(59,132,220,1.00);
+			background-image: url("placeholder-image.png");
+			background-position: center;
+			background-repeat: no-repeat;
+			border-radius: 8px;
+			position: relative;
+			
+		
+		}
+		.box::after {
+			content: "Image Title";
+			background-color: rgba(249,248,248,1.00);
+			width: 100%;
+			padding: 8px;
+			box-sizing: border-box;
+			position: absolute;
+			border-bottom-left-radius: 8px;
+			border-bottom-right-radius: 8px;
+			top:110px;
+			text-align: center;
+			
+		}
+		
+		
+		
+		@media screen and (max-width: 780px) {
+			
+				#container {
+			max-width: 780px;
+			margin: 0 auto;
+					
+		}
+			
+			main#gridbox {
+				
+				grid-template-columns: 1fr 1fr 1fr;
+				
+			
+			}
+			
+			
+		}
+		
+			@media screen and (max-width: 414px) {	
+			
+				
+				#container {
+			max-width: 414px;
+			margin: 0 auto;
+					
+		}
+				main#gridbox {
+					
+					grid-template-columns: 1fr;
+					justify-items:center;
+				
+			}
+				
+				#header {
+					text-align: center;
+				}
+			
+			
+		}		
+		
+		
+		
+			
+		
+	</style>
+	
+	
+	
+</head>
+
+<body>
+	<div id="container">
+	
+	<header id="header">
+		<h1>Gallery Heading</h1>
+	</header>
+	<main id="gridbox">
+		<div id="box1" class="box"></div>
+		<div id="box2" class="box"></div>
+		<div id="box3" class="box"></div>
+		<div id="box4" class="box"></div>
+		<div id="box5" class="box"></div>
+		<div id="box6" class="box"></div>
+		<div id="box7" class="box"></div>
+		<div id="box8" class="box"></div>
+		<div id="box9" class="box"></div>
+		<div id="box10" class="box"></div>
+		
+	</main>
+	<article id="text">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta sint velit tenetur quaerat ipsa fugit quisquam impedit minus numquam magnam ducimus minima laborum totam dicta deleniti iure, sit culpa dolorem commodi veniam, ullam alias id qui. Recusandae nihil cum obcaecati qui nisi minima odit voluptatibus totam nam a. Accusamus ad repellat cupiditate nemo inventore incidunt totam, qui quae dolores necessitatibus ipsam atque labore dolorum iste sint, ullam sequi optio voluptates velit architecto sunt nam harum? Veritatis, dolore illo officiis quos mollitia pariatur optio quibusdam quaerat et nobis ipsa totam, asperiores iusto repellendus, rem illum assumenda? Molestias amet eius, et expedita.</p>
+	</article>
+	
+	</div>
+</body>
+</html>
